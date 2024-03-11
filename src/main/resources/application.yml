@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: guest
+    password: guest1234
+    url: jdbc:jtds:sybase://43.139.19.48:5000/guest
+    driver-class-name: net.sourceforge.jtds.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      idle-timeout: 60000
+      minimum-idle: 5
+      maximum-pool-size: 20
+Nest:
+  url: 127.0.0.1:3000
